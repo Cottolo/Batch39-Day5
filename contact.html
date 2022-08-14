@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>Selamat Datang</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div>
+        <nav class="nav-top">
+            <div class="nav-left">
+                <img style="width:50px ;" src="assets/cot logo.PNG" alt="Logo">
+                <ul>
+                    <li>
+                        <a style="font-weight: bold ;" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+
+        </nav>
+
+        <div class="badan">
+            <div class="get">
+                <h2 style="
+                margin:0;
+                text-align:center;
+                padding-top: 50px;
+                ">GET IN TOUCH</h2>
+            </div>
+            <form>
+
+                <div>
+                    <label for="in-nama">Name</label>
+                    <input placeholder="Masukan nama" id="in-nama" type="text" />
+                </div>
+
+                <div>
+                    <label for="in-email">Email</label>
+                    <input placeholder="Masukan Email" id="in-email" type="text" />
+                </div>
+
+                <div class="phone">
+                    <label for="in-phone">Phone Number</label>
+                    <input placeholder="Masukan Nomor HP" id="in-phone" type="number">
+                </div>
+
+                <div>
+                    <label for="in-subject">Subject</label>
+                    <select id="in-subject">   
+                        <option value="" hidden>select</option>
+                        <option value="Hire Me">Hire Me</option>
+                        <option value="Let's Talk">Let's Talk</option>
+                        <option value="Let's Meet">Let's Meet</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="text-message">Your Message</label>
+                    <textarea placeholder="Masukan pesan" id="text-message" cols="" rows=""
+                        style="resize: none;"></textarea>
+                </div>
+                <div class="submit">
+                    <button onclick="submitData()" style="cursor: pointer;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="form.js"></script>
+
+</body>
+
+</html>

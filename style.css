@@ -1,0 +1,108 @@
+body{
+    margin:0;
+}
+nav{
+    background-color:rgb(123, 138, 143);
+    display: flex;
+    height: 9vh;
+}
+
+.nav-left{
+    background-color:;
+    width: 50%;
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-left li{
+    display: inline;
+}
+
+.nav-left ul{
+    display: flex;
+}
+
+.nav-left ul li a{
+    color: black;
+    text-decoration: none;
+    padding-right: 50px;
+
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:;
+    width: 50%;
+}
+
+.nav-right a{
+    color: white;
+    border: solid 1px black;
+    margin-right: 100px;
+    background-color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.container{
+    background-color: azure;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 85%;
+    background-color: ;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 40px;
+
+}
+
+.container-left{
+    flex: 70%;
+}
+
+.container-right{
+    flex: 30%;
+    justify-content: flex-end;
+    margin-left: 30px;
+}
+
+.contact-download{
+    display: flex;
+    background-color:;
+    align-items: center;
+}
+.container-left p{
+    text-align: justify;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed a{
+    margin-right: 20px;
+    border: none;
+    border-radius:0;
+    padding: 5px;
+    color: rgb(6, 37, 63);
+    border-color:;
+    background-color:;
+    width: auto;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+

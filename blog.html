@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Project</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div>
+
+
+        <div>
+
+            <nav class="nav-top">
+                <div class="nav-left">
+                    <img style="width:50px ;" src="assets/cot logo.PNG" alt="Logo">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold ;" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">My Project</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <a href="contact.html">Contact Me</a>
+                </div>
+
+            </nav>
+
+        </div>
+
+        <div class="badan">
+
+            <h2 class="add">ADD MY PROJECT</h2>
+
+            <form onsubmit="addBlog(event)">
+                <div class="form-top">
+                    <div>
+
+                        <label for="in-project">Project Name</label>
+                        <input id="in-project" type="text">
+
+                    </div>
+
+                    <div class="form-date">
+                        <div class="date-left">
+
+                            <label for="in-startdate">Start Date</label>
+                            <input id="in-startdate" type="date" />
+
+                        </div>
+
+                        <div class="date-right">
+
+                            <label for="in-enddate">End Date</label>
+                            <input id="in-enddate" type="date" />
+
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <label for="in-Description">Description</label>
+                        <textarea style="resize: none;" name="" id="in-Description" cols="" rows=""></textarea>
+
+                    </div>
+                </div>
+                <p style="
+                    margin: 0px 0px 10px 0px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    ">Technologies</p>
+                <div class="checkbox">
+
+                    <div class="checkbox-left">
+                        <div>
+
+                            <input id="node-js" type="checkbox" value="node-js" checked>
+                            <label for="nodejs">Node Js</label>
+
+                        </div>
+
+                        <div>
+
+                            <input id="next-js" type="checkbox" value="google-play" checked>
+                            <label for="nextjs">Next Js</label>
+
+                        </div>
+                    </div>
+
+                    <div class="checkbox-right">
+                        <div>
+
+                            <input id="react-js" type="checkbox" value="react" checked>
+                            <label for="reactjs">React Js</label>
+
+                        </div>
+
+                        <div>
+
+                            <input id="type-script" type="checkbox" value="js" checked>
+                            <label for="typescript">TypeScript</label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <label>Upload Image</label>
+                    <div class="input-image">
+                        <label for="in-image">
+                            <p>choose</p>
+                            <img src="assets/file.png" alt="file" />
+                        </label>
+                        <input type="file" id="in-image" hidden />
+                    </div>
+
+                </div>
+
+                <div class="submit">
+                    <button>submit</button>
+                </div>
+
+
+
+            </form>
+
+        </div>
+    </div>
+    <h2 style="text-align: center;
+                margin: 60px;
+                ">MY PROJECT</h2>
+    
+        <div class="container" id="container">
+    
+            <a href="detail-blog.html" class="container-post">
+    
+                <div >
+                    <div class="container-image">
+                        <img src="assets/nokia.jpg" alt="Nokia">
+                    </div>
+                    <div class="container-title">
+                        <h2>HP Terkuat Bukan Kaleng-Kaleng</h2>
+                    </div>
+                    <div class="container-description">
+                        <p class="container-duration">Durasi: 3 bulan</p>
+                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate saepe cumque natus dolor ducimus labore necessitatibus magnam accusantium neque tempora tempore eaque sed voluptate in, quam, minus excepturi distinctio hic.
+                </div>
+                <div class="container-icon">
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-android"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-solid fa-mobile-screen"></i>
+    
+                </div>
+                <div class="container-option">
+                    <button class="container-option-left">edit</button>
+                    <button class="container-option-right">delete</button>
+                </div>
+    
+    
+                <div >
+    
+                </div>
+    
+            </a>
+    
+        </div>
+
+
+</body>
+<script src="blog.js"></script>
+
+</html>
