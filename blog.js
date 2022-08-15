@@ -1,16 +1,29 @@
 let dataBlog=[]
 
-
 function addBlog(event){
     event.preventDefault()
 
     let projectName = document.getElementById("in-project").value
     let description = document.getElementById("in-Description").value
-    let iconNodeJs = document.getElementById("node-js").value
-    let iconNextJs = document.getElementById("next-js").value
-    let iconReactJs = document.getElementById("react-js").value
-    let iconTypeScript = document.getElementById("type-script").value
+    let iconNodeJs = document.getElementById("node-js").checked
+    let iconNextJs = document.getElementById("next-js").checked
+    let iconReactJs = document.getElementById("react-js").checked
+    let iconTypeScript = document.getElementById("type-script").checked
     let image = document.getElementById("in-image").files
+
+    if(iconNodeJs){
+        iconNodeJs = document.getElementById("node-js").value
+    } else {iconNodeJs = ``}
+    if(iconNextJs){
+        iconNextJs = document.getElementById("next-js").value
+    } else {iconNextJs = ``}
+    if(iconReactJs){
+        iconReactJs = document.getElementById("react-js").value
+    } else {iconReactJs = ``}
+    if(iconTypeScript){
+        iconTypeScript = document.getElementById("type-script").value
+    } else {iconTypeScript = ``}
+
     // let start = getStart(new Date(document.getElementById("in-startdate").value))
     let duration = getDuration()
 

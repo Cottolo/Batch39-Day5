@@ -6,8 +6,8 @@ function submitData(){
     let subject = document.getElementById("in-subject").value
     let message = document.getElementById("text-message").value
 
-    if(email == ""){
-        return alert("name wajib diisi")
+    if(name == ""){
+       return alert("name wajib diisi")
      } else if(email == ""){
         return alert("email wajib diisi")
      } else if(phone == ""){
